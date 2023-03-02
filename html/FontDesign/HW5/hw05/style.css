@@ -1,0 +1,27 @@
+.Block{
+    border-style: solid;
+    border-width: 3px;
+    padding: 6px 20px;
+    width: 90%;
+    height: fit-content;
+    font-size: 26px;
+    font-family: Arial;
+    text-align: left;
+}
+
+.Center{
+    display: block;
+    margin: 5px auto;
+}
+
+.Inline{
+    display: inline-block;
+    flex-direction: column;
+    margin: 5px 5px;
+}
+
+.Color{
+    color: #FFFFFF;
+    border-color: #888888;
+    background-color: #222222;
+}

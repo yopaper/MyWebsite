@@ -1,0 +1,64 @@
+
+.Block{
+    border-style: solid;
+    border-width: 3px;
+    padding: 4px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 26px;
+    font-family: Arial;
+    text-align: center;
+}
+
+.Center{
+    display: block;
+    margin: 12px auto;
+}
+
+.Inline{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 4px;
+}
+
+.Image{
+    width: 40%;
+    display: block;
+    margin: 12px auto;
+}
+
+.Blue{
+    color: #AAAAFF;
+    border-color: #7777FF;
+    background-color: #222266;
+}
+
+.Red{
+    color: #FFAAAA;
+    border-color: #FF7777;
+    background-color: #662222;
+}
+
+.Green{
+    color: #AAFFAA;
+    border-color: #77FF77;
+    background-color: #226622;
+}
+
+.Purple{
+    color: #FFAAFF;
+    border-color: #FF77FF;
+    background-color: #662266;
+}
+
+.White{
+    color: #FFFFFF;
+    border-color: #DDDDDD;
+    background-color: #444444;
+}
+
+.Black{
+    color: #111111;
+    border-color: #111111;
+    background-color: #DDDDDD;
+}
