@@ -1,12 +1,11 @@
 .Block{
     border-style: solid;
-    border-width: 3px;
-    padding: 6px 20px;
-    width: 90%;
-    height: fit-content;
+    border-width: 1px;
+    padding: 20px 20px;
     font-size: 26px;
     font-family: Arial;
     text-align: left;
+    margin: 20px 30px;
 }
 
 .Center{
@@ -22,6 +21,6 @@
 
 .Color{
     color: #FFFFFF;
-    border-color: #888888;
-    background-color: #222222;
+    border-color: #FFFFFF;
+    background-color: #7B5DAD;
 }

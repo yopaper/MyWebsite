@@ -4,6 +4,8 @@ tsc ./html/FontDesign/HW5/hw05/index.ts
 var responseText = document.getElementById("Response");
 var demoText1 = document.getElementById("DemoText1");
 var demoText2 = document.getElementById("DemoText2");
+var passText1 = document.getElementById("Pass-1");
+var passText2 = document.getElementById("Pass-2");
 var EASY_FONT_NAME = "EasyFontFace";
 var MEDIUM_FONT_NAME = "MediumFontFace";
 //----------------------------------------------------------------------
@@ -18,7 +20,6 @@ function LoadResponseText(){
         try{
             dataLoader.onload = startLoad;
             dataLoader.open("GET", "./src/心得.txt");
-            //dataLoader.overrideMimeType("text/plain; charset=BIG5");
             dataLoader.send();
         }catch(e){
 
@@ -27,22 +28,26 @@ function LoadResponseText(){
 }//---------------------------------------------------------------------
 function LoadFont(){
     setTimeout( ()=>{
+        
         try{
             var font = new FontFace(EASY_FONT_NAME, "url(./src/easy.ttf)");
+            var message = "失敗(+0)";
+            font.load().then( ()=>{message = "通過(+2)"} );
             document.fonts.add(font);
             demoText1.style.fontFamily = EASY_FONT_NAME;
-        }catch(e){
-
-        }
+            setTimeout(()=>{ passText1.appendChild( document.createTextNode(message) ); }, 100);
+        }catch(e){}
     }, 125 );
     setTimeout( ()=>{
         try{
             var font = new FontFace(MEDIUM_FONT_NAME, "url(./src/medium.ttf)");
+            var message = "失敗(+0)";
+            font.load().then( ()=>{message = "通過(+2)"} );
             document.fonts.add(font);
             demoText2.style.fontFamily = MEDIUM_FONT_NAME;
-        }catch(e){
+            setTimeout(()=>{ passText2.appendChild( document.createTextNode(message) ); }, 100);
             
-        }
+        }catch(e){}
     }, 150 );
     
 }//----------------------------------------------------------------------

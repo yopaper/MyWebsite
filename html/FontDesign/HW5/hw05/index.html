@@ -1,55 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>作品集 - 作業五</title>
 </head>
-<link href="./style.css" rel="stylesheet">
-<body bgcolor="#111111">
-    <div class="Inline Block Color" style="font-size: 35px;">
+
+<body style="background-color: #6A4C9C;">
+    <div>
+    <div class="row Color Block" style="font-size: 35px;">
         作業 05
-    </div><br>
-    <div class="Block Inline Color" id="Response"></div>
-    <div class="Block Inline Color">
-        <div class="Block Inline Color">評分標準</div>
-        <div class="Block Inline Color" style="width: 25%; color:#CCFFCC;">
+    </div>
+    <div class="row Color Block" id="Response"></div>
+    <div class="row Color Block">
+        <div class="col-12 Color Block" style="margin: 0px; font-size: 36px;">評分標準</div>
+        <div class="col-2 Color Block" style="margin: 0px; color:#CCFFCC; background: #336633;">
             Simple baseline (2pt)<br>
             使用守寫字(舊版)製作字型
         </div>
-        <div class="Block Inline Color" style="width: 25%; color:#FF8888;">
+        <div class="col-2 Color Block" style="margin: 0px; color:#CCFFCC; background: #336633;" id="Pass-1">
+            
+        </div>
+        <div class="col-2 Color Block" style="margin: 0px; color:#FF8888; background: #663333;">
             Medium baseline (2pt)<br>
             使用Flexi Font 系統製作字型
         </div>
-        <div class="Block Inline Color" style="width: 25%; color:#CC88FF;">
+        <div class="col-2 Color Block" style="margin: 0px; color:#FF8888; background: #663333;" id="Pass-2">
+            
+        </div>
+        <div class="col-2 Color Block" style="margin: 0px; color:#DDAAFF; background: #442266;">
             Strong baseline (6pt)<br>
             繳交實體的紙本稿紙 (限定紙本)
         </div>
+        <div class="col-2 Color Block" style="margin: 0px; color:#DDAAFF; background: #442266;">
+            依繳交情況而定
+        </div>
     </div>
 
-    <div class="Inline Block Color" style="width: 45%; font-size: 35px;">守寫字系統</div>
-    <div class="Inline Block Color" style="width: 45%; font-size: 35px;">FlexiFont系統</div><br>
-    <div class="Inline Block Color" style="width: 45%; " id="DemoText1">
-        !"#$%&'()*+,-./ 0123456789:;<=>?@<br>
-        ABCDEFGHIJKLMN OPQRSTUVWXYZ[\]^_`<br>
-        abcdefghijklmn opqrstuvwxyz{|}~<br>
-        甲乙丙丁戊己庚辛壬癸子丑寅卯辰巳午未申酉戌亥鼠牛虎兔龍蛇馬羊猴雞狗豬一二三四五六七八九十零壹貳參肆伍陸柒捌玖拾金木水火土人生而自由以下為修課名單周雨柔林耘王育嵐顏琦恩劉瑄軒許鈞豪陳立尊闕沛宇奕文心俞喬羅彥洪嘉璘吳佩臻莊永梁佑駿柏綸鑫童煜翔峰楷萬弘李光耀森黃乃盧岳劭曹慶宥禹彤家同淇淼謝承翰哲維上澤雷岱蓉賴俊霖威勝蔡竣傑堯唐政瑋之正邱凡洺榮庭卓亞璇偉斌易安萱谷軍廖若鄭少筱崴然詹緯德至秉宏銘麟郁凱錩徐妍婕楊朋琳玲佳吟天胡紹帆力爽右儒沈芃妡志謙怡譚游瑩塗晨睿
+    <div class="row Color Block">
+        <div class="col-6 Color Block" style="margin: 0px; font-size: 35px;">守寫字系統</div>
+        <div class="col-6 Color Block" style="margin: 0px; font-size: 35px;">FlexiFont系統</div><br>
+        <div class="col-6 Color Block" style="margin: 0px; " id="DemoText1">
+            !"#$%&'()*+,-./ 0123456789:;<=>?@<br>
+            ABCDEFGHIJKLMN OPQRSTUVWXYZ[\]^_`<br>
+            abcdefghijklmn opqrstuvwxyz{|}~<br>
+            甲乙丙丁戊己庚辛壬癸子丑寅卯辰巳午未申酉戌亥鼠牛虎兔龍蛇馬羊猴雞狗豬一二三四五六七八九十零壹貳參肆伍陸柒捌玖拾金木水火土人生而自由以下為修課名單周雨柔林耘王育嵐顏琦恩劉瑄軒許鈞豪陳立尊闕沛宇奕文心俞喬羅彥洪嘉璘吳佩臻莊永梁佑駿柏綸鑫童煜翔峰楷萬弘李光耀森黃乃盧岳劭曹慶宥禹彤家同淇淼謝承翰哲維上澤雷岱蓉賴俊霖威勝蔡竣傑堯唐政瑋之正邱凡洺榮庭卓亞璇偉斌易安萱谷軍廖若鄭少筱崴然詹緯德至秉宏銘麟郁凱錩徐妍婕楊朋琳玲佳吟天胡紹帆力爽右儒沈芃妡志謙怡譚游瑩塗晨睿
+        </div>
+        <div class="col-6 Color Block" style="margin: 0px;" id="DemoText2">
+            !"#$%&'()*+,-./ 0123456789 :;<=>?@<br>
+            ABCDEFGHIJKLMN OPQRSTUVWXYZ[\]^_`<br>
+            abcdefghijklmn opqrstuvwxyz{|}~<br>
+            甲乙丙丁戊己庚辛壬癸子丑寅卯辰巳午未申酉戌亥鼠牛虎兔龍蛇馬羊猴雞狗豬一二三四五六七八九十零壹貳參肆伍陸柒捌玖拾金木水火土人生而自由以下為修課名單周雨柔林耘王育嵐顏琦恩劉瑄軒許鈞豪陳立尊闕沛宇奕文心俞喬羅彥洪嘉璘吳佩臻莊永梁佑駿柏綸鑫童煜翔峰楷萬弘李光耀森黃乃盧岳劭曹慶宥禹彤家同淇淼謝承翰哲維上澤雷岱蓉賴俊霖威勝蔡竣傑堯唐政瑋之正邱凡洺榮庭卓亞璇偉斌易安萱谷軍廖若鄭少筱崴然詹緯德至秉宏銘麟郁凱錩徐妍婕楊朋琳玲佳吟天胡紹帆力爽右儒沈芃妡志謙怡譚游瑩塗晨睿
+        </div><br>
+        <div class="col-6 Color Block" style="margin: 0px;">
+            檔案請放在 ./src 資料夾中<br>
+            檔案名稱改為 "easy.ttf" (請全部小寫) 
+        </div>
+        <div class="col-6 Color Block" style="margin: 0px;">
+            檔案請放在 ./src 資料夾中<br>
+            檔案名稱改為 "medium.ttf" (請全部小寫) 
+        </div><br>
+        </div>
     </div>
-    <div class="Inline Block Color" style="width: 45%;" id="DemoText2">
-        !"#$%&'()*+,-./ 0123456789 :;<=>?@<br>
-        ABCDEFGHIJKLMN OPQRSTUVWXYZ[\]^_`<br>
-        abcdefghijklmn opqrstuvwxyz{|}~<br>
-        甲乙丙丁戊己庚辛壬癸子丑寅卯辰巳午未申酉戌亥鼠牛虎兔龍蛇馬羊猴雞狗豬一二三四五六七八九十零壹貳參肆伍陸柒捌玖拾金木水火土人生而自由以下為修課名單周雨柔林耘王育嵐顏琦恩劉瑄軒許鈞豪陳立尊闕沛宇奕文心俞喬羅彥洪嘉璘吳佩臻莊永梁佑駿柏綸鑫童煜翔峰楷萬弘李光耀森黃乃盧岳劭曹慶宥禹彤家同淇淼謝承翰哲維上澤雷岱蓉賴俊霖威勝蔡竣傑堯唐政瑋之正邱凡洺榮庭卓亞璇偉斌易安萱谷軍廖若鄭少筱崴然詹緯德至秉宏銘麟郁凱錩徐妍婕楊朋琳玲佳吟天胡紹帆力爽右儒沈芃妡志謙怡譚游瑩塗晨睿
-    </div><br>
-    <div class="Inline Block Color" style="width: 45%;">
-        檔案請放在 ./src 資料夾中<br>
-        檔案名稱改為 "easy.ttf" (請全部小寫) 
-    </div>
-    <div class="Inline Block Color" style="width: 45%;">
-        檔案請放在 ./src 資料夾中<br>
-        檔案名稱改為 "medium.ttf" (請全部小寫) 
-    </div><br>
 </body>
 <script src="./index.js"></script>
 </html>
