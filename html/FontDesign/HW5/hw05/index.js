@@ -35,9 +35,9 @@ function LoadFont(){
             font.load().then( ()=>{message = "通過(+2)"} );
             document.fonts.add(font);
             demoText1.style.fontFamily = EASY_FONT_NAME;
-            setTimeout(()=>{ passText1.appendChild( document.createTextNode(message) ); }, 100);
+            setTimeout(()=>{ passText1.appendChild( document.createTextNode(message) ); }, 1000);
         }catch(e){}
-    }, 125 );
+    }, 100 );
     setTimeout( ()=>{
         try{
             var font = new FontFace(MEDIUM_FONT_NAME, "url(./src/medium.ttf)");
@@ -45,10 +45,10 @@ function LoadFont(){
             font.load().then( ()=>{message = "通過(+2)"} );
             document.fonts.add(font);
             demoText2.style.fontFamily = MEDIUM_FONT_NAME;
-            setTimeout(()=>{ passText2.appendChild( document.createTextNode(message) ); }, 100);
+            setTimeout(()=>{ passText2.appendChild( document.createTextNode(message) ); }, 1000);
             
         }catch(e){}
-    }, 150 );
+    }, 110 );
     
 }//----------------------------------------------------------------------
 LoadResponseText();
